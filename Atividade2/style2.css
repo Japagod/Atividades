@@ -1,10 +1,36 @@
+.margem{
+    margin-top: 10px;
+    border: white dashed 2px;
+}
+article{
+    width: 80vw;
+}
+#centera{
+    display: flex;
+    flex-direction: column;
 
-#linhabtt{
+}
+#center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.coluna{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.linha{
     margin-top: 20px;
     display: flex;
     flex-direction: row;
 }
 main button{
+    padding: 2px;
+    height: 40px;
+    width: 100px;
     margin-block: 10px;
     margin-inline: 20px;
 }
