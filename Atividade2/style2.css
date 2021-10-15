@@ -1,0 +1,10 @@
+
+#linhabtt{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+main button{
+    margin-block: 10px;
+    margin-inline: 20px;
+}
