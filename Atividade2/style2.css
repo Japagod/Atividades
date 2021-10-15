@@ -1,5 +1,6 @@
 .margem{
-    margin-top: 10px;
+    padding: 10px;
+    margin-block: 5vh;
     border: white dashed 2px;
 }
 article{
