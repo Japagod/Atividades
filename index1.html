@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="center" id="coluna">
+       <h3>Informe seu dinheiro</h3>
+        <input onchange="calc()" type="number" name="number" id="din">
+        <p id="erro" style="font-size: large; color: red;"></p>
+        <div id="linha">
+            <div class="margin" id="coluna">
+                <h3>Sem desconto</h3>
+                <span id="res1"></span>
+                <span id="res2"></span>
+                <span id="res3"></span>
+            </div>
+            <div id="coluna" class="margin">
+                <h3>10% de desconto</h3>
+                <span id="res10"></span>
+                <span id="res20"></span>
+                <span id="res30"></span>
+            </div>
+            <div id="coluna" class="margin">
+                <h3>15% de desconto</h3>
+                <span id="res100"></span>
+                <span id="res200"></span>
+                <span id="res300"></span>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
