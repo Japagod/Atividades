@@ -66,8 +66,8 @@ nav div {
     align-items: center;
     margin: 20px;
     margin-bottom: 0px;
-    height: 80px;
-    width: auto;
+    height: 15vh ;
+    min-width: 80px;
     border-radius: 10px;
 }
         /*MAIN*/
@@ -75,8 +75,8 @@ article{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 1cm;
-    width: auto;
+    margin-block: 1cm;
+    width: 80vw;
     height: auto;
     padding: 1em;
 }
@@ -93,11 +93,13 @@ main{
     padding: 1vw;
 }
 article button {
-    height: 50px;
-    width: 20vw;
+    min-height: 50px;
+    min-width: 200px;
+    height: auto;
+    width: auto;
 }
 article div{
-    width: 20vw;
+    width:  30vw;
 }
 .articletext{
     max-width: 40vw;
