@@ -10,8 +10,10 @@ var res30 = document.getElementById("res30")
 let res100 = document.getElementById("res100")
 var res200 = document.getElementById("res200")
 const res300 = document.getElementById("res300")
+var erro = document.getElementById("erro")
 
 function calc() {
+  erro.innerHTML = null
   res1.innerHTML = null
   res2.innerHTML = null
   res3.innerHTML = null
@@ -22,6 +24,7 @@ function calc() {
   res200.innerHTML = null
   res300.innerHTML = null
   var din = document.getElementById("din").value
+  if(din>0){
   var nm = Math.floor(din/maçã)
   var nb = Math.floor(din/banana)
   var na = Math.floor(din/abacaxi)
@@ -56,5 +59,7 @@ function calc() {
     res30.innerHTML = Math.floor( na + (0.1 * na)) + " Abacaxis"
     res300.innerHTML = Math.floor( na + (0.15 * na)) + " Abacaxis"
   }
-
+} else {
+  erro.innerHTML = "Por favor, insira uma quantidade válida"
+}
 }
