@@ -4,3 +4,7 @@ iframe{
     background-color: white;
     border-radius: 10px;
 }
+article{
+    display: flex;
+    justify-content: center;
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,32 +8,63 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
-    <main class="center" id="coluna">
-       <h3>Informe seu dinheiro</h3>
-        <input onchange="calc()" type="number" name="number" id="din">
-        <p id="erro" style="font-size: 20pt; color: red;"></p>
-        <div id="linha">
-            <div class="margin" id="coluna">
-                <h3>Sem desconto</h3>
-                <span id="res1"></span>
-                <span id="res2"></span>
-                <span id="res3"></span>
-            </div>
-            <div id="coluna" class="margin">
-                <h3>10% de desconto</h3>
-                <span id="res10"></span>
-                <span id="res20"></span>
-                <span id="res30"></span>
-            </div>
-            <div id="coluna" class="margin">
-                <h3>15% de desconto</h3>
-                <span id="res100"></span>
-                <span id="res200"></span>
-                <span id="res300"></span>
+    <button id="bttswi" onclick="swit()"></button>
+    <main id="infdin">
+        <div class="center" id="coluna">
+            <h3>Informe seu dinheiro</h3>
+            <input onchange="calc()" type="number" name="number" id="din">
+            <p id="erro" style="font-size: large; color: red;"></p>
+            <div id="linha">
+                <div class="margin" id="coluna">
+                    <h3>Sem desconto</h3>
+                    <span id="res1"></span>
+                    <span id="res2"></span>
+                    <span id="res3"></span>
+                </div>
+                <div id="coluna" class="margin">
+                    <h3>10% de desconto</h3>
+                    <span id="res10"></span>
+                    <span id="res20"></span>
+                    <span id="res30"></span>
+                </div>
+                <div id="coluna" class="margin">
+                    <h3>15% de desconto</h3>
+                    <span id="res100"></span>
+                    <span id="res200"></span>
+                    <span id="res300"></span>
+                </div>
             </div>
         </div>
     </main>
-    <script src="script.js"></script>
+    <main id="infprod">
+        <h3>Quanto deseja comprar de cada produto?</h3>
+        <div class="infoprodutos">
+            <label for="maçã">Maçãs:</label>
+            <input id="maça" name="maçã" type="number" onchange="calculapreço()">
+            <label for="banana">Banana:</label>
+            <input id="banana" name="banana" type="number" onchange="calculapreço()">
+            <label for="abacaxi">Abacaxi:</label>
+            <input id="abacaxi" name="abacaxi" type="number" onchange="calculapreço()">
+        </div>
+        <h3>Irá custar : <span id="cp"></span></h3>
+    </main>
+    <script src="main.js"></script>
+    <script src="main2.js"></script>
+    <script>
+        function swit() {
+            var calc1 = document.getElementById("infprod")
+            var calc2 = document.getElementById("infdin")
+            if (calc1.style.display == "flex") {
+                calc2.style.display = "flex"
+                calc1.style.display = "none"
+            } else {
+                calc1.style.display = "flex"
+                calc2.style.display = "none"
+            }
+        }
+    </script>
 </body>
+
 </html>
