@@ -42,5 +42,6 @@ function calculapreço() {
     }
 
 
-    res.innerHTML = resp1 + resp2 + resp3
+     var aaa = resp1 + resp2 + resp3
+    res.innerHTML = aaa.toFixed(2)
 }
