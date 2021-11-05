@@ -168,6 +168,7 @@ a{
     height: 100%;
     width: 80vw;
     overflow-y: scroll;
+    scrollbar-width: 0px;
 }
 .conteudo::-webkit-scrollbar{
     display: none;
