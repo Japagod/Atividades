@@ -1,0 +1,227 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0%;
+    margin: 0%;
+    height: 100vh;
+    overflow: hidden;    
+}
+#audio{
+    z-index: 1;
+    border-radius: 5px;
+    align-items: flex-end;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 80px;
+    bottom: 0%;
+    left: -20px;
+    background-color: #121212;
+}
+#audio button{
+    height: 40px;
+    width: 40px;
+}
+#audio img{
+    filter: invert(87%) sepia(4%) saturate(2278%) hue-rotate(331deg) brightness(113%) contrast(98%);
+}
+li{
+    list-style: url(../img/chevron-right.svg);
+    filter: invert(87%) sepia(4%) saturate(2278%) hue-rotate(331deg) brightness(113%) contrast(98%);
+}
+h1{
+    color: #6D8EA0;
+}
+a{
+    color: #FDF0D5;
+    text-decoration: none;
+}
+#att1 h2,#att2 h2,#att3 h2{
+    font-size: 14pt;
+    color: #6D8EA0;
+}
+#imbg{
+    filter: brightness(0.6) blur(2px);
+    height: 101vh;
+    width: 101vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#att1a,#att2a,#att3a{
+    cursor: pointer;
+    color: #FDF0D5;
+}
+#att1a:hover,#att2a:hover,#att3a:hover{
+    transition: 0.2s ease;
+    padding: 10px;
+    border: #FDF0D5 solid 2px;
+}
+.esq{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    position: absolute;
+    height: 82%;
+    width: 25%;
+    left: 15%;
+    bottom: -2%;
+    background-color: #121212;
+}
+.dir{
+    color: #000000;
+    padding: 20px;
+    border-radius: 5px;
+    position: absolute;
+    background-color: #121212;
+    height: 82%;
+    width: 300px;
+    top: -2%;
+    left: 65%;
+}
+#att1{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;  
+    top: 20%;
+    transition: ease 0.4s;
+    opacity: 0;
+    pointer-events: none;
+}
+#att2{
+   
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;  
+    top: 20%;
+    transition: ease 0.4s;
+    opacity: 0;
+    pointer-events: none;
+}
+#att3{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;  
+    top: 20%;
+    transition: ease 0.4s;
+    opacity: 0;
+    pointer-events: none;
+}
+#atts{
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    top: 0%;
+    left: 0%;
+    pointer-events: none;
+}
+#home{
+    z-index: 3;
+    cursor: pointer;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 10vh;
+    width: 10vh;
+    border-radius: 5px;
+    border: #FDF0D5 solid 3px;
+    background-color: #121212;
+}
+#home img{
+    height: 80%;
+    filter: invert(87%) sepia(4%) saturate(2278%) hue-rotate(331deg) brightness(113%) contrast(98%);
+}
+            /* Aqui começa as paginas das atts */
+
+@keyframes anim-entrada{
+    from{height: 0%;width: 0vw;} 
+    to {height: 100%;width: 100vw;}
+}
+@keyframes anim-saida{
+    from{height: 100%;width: 100vw;} 
+    to {height: 0%;width: 0vw;}
+}
+.espaço{
+    opacity: 0;
+    height: 100vh;
+    width: 10vw;
+}
+.conteudo{
+    color: #FDF0D5;
+    /* opacity: 1; */
+    height: 100%;
+    width: 80vw;
+    overflow-y: scroll;
+}
+.conteudo::-webkit-scrollbar{
+    display: none;
+}
+button{
+    margin: 5px;
+    cursor: pointer;
+    background-color: #121212;
+    color: #FDF0D5;
+    width: 100px;
+    height: 30px;
+    border: #FDF0D5 solid 2px;
+}
+input[type=number]{
+    margin: 5px;
+    cursor: text    ;
+    background-color: #121212;
+    color: #FDF0D5;
+    width: 150px;
+    height: 30px;
+    border: #FDF0D5 solid 2px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.coluna{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+.linha{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#divatt1,#divatt2,#divatt3{
+    padding: 50px;
+    display: none;
+    flex-direction: row;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 0vh;
+    width: 0vw;
+    background-color: #121212;
+}
