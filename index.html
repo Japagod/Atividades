@@ -1,172 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Assets/Css/style.css">
-    <link rel="shortcut icon" href="./Assets/img/home.svg" type="image/x-icon">
-    <title>Breno Atividades</title>
+    <link rel="stylesheet" href="./Assets/CSS/style.css">
+    <title>Document</title>
 </head>
+<body id="body">
+    <div id="config">
+        <img src="./Assets/IMG/gear-fill.svg" alt="">
+    </div>
+<nav id="nav">
+    <div>
+        <label id="nav_label" for="input_userspan">Tempo do Aviso</label>
+        <input id="input_userspan" type="number" onchange="userspan()">
+        <img id="light_dark" src="./Assets/IMG/theme-light-dark-1.svg" alt="">
+    </div>
+</nav>
+<main id="main">
+    
+</main>
 
-<body>
-    <audio src="./Assets/audio/music.mp3" id="player" autoplay loop >
-    </audio>
-    <div id="audio"> 
-        <button onclick="document.getElementById('player').play()"><img src="./Assets/img/play.svg" alt=""></button> 
-        <button onclick="document.getElementById('player').pause()"><img src="./Assets/img/pause-fill.svg" alt=""></button> 
-        <button onclick="document.getElementById('player').volume += 0.1">Vol +</button> 
-        <button onclick="document.getElementById('player').volume -= 0.1">Vol -</button> 
-      </div>
-    <img id="imbg" src="Assets/img/mountains-1412683.png" alt="">
-    <div class="esq">
-        <h1>Atividades</h1>
-        <h2><span id="att1a">Atividade 1</span></h2>
-        <h2><span id="att2a">Atividade 2</span></h2>
-        <h2><span id="att3a">Atividade 3 (Aula)</span></h2>
-    </div>
-    <div class="dir">
-        <div id="att1">
-            <h2>Busque as informações necessárias para responder à lista de questões sobre Javascript:</h2>
-            <ul>
-                <li><span>O que é JavaScript? Quando foi criado?</span></li>
-                <li>Para que ele é usado em uma página HTML?</li>
-                <li>Como adicionar JS em uma página web?</li>
-                <li>O que é ES5 e ES6, ES2015, etc?</li>
-                <li>Qual a versão atual do JS?</li>
-                <li>O que é uma biblioteca JS e como adicionar uma ao site?</li>
-                <li>Cite 5 exemplos de bibliotecas (com suas funcionalidades principais).</li>
-            </ul>
-        </div>
-        <div id="att2">
-            <h2>Utilize o editor de sua preferência para criar sites com:</h2>
-            <ul>
-                <li>Texto que pode ter seu tamanho alterado por dois botões no início da tela.</li>
-                <li>Texto que pode mudar de cor de acordo com um botão de seleção de cor.</li>
-                <li>Número que pode ser ajustado por dois botões.</li>
-                <li>Permita que o usuário digite os valores de A, B e C e utilize-os para calcular as raízes da equação
-                    quadrática: y=Ax²+Bx+C.</li>
-            </ul>
-        </div>
-        <div id="att3">
-            <h2>Crie uma calculadora de preços onde:</h2>
-            <ul>
-                <li>Cada maçã custa 1 real</li>
-                <li>Cada banana custa 0,5 real</li>
-                <li>Cada abacaxi custa 1,5 real</li>
-                <li>Compras acima de R$5 tem um desconto de 10%, acima de R$15 desconto de 15%</li>
-            </ul>
-        </div>
-    </div>
-    <div id="atts">
-        <div id="divatt1">
-            <div class="espaço"></div>
-            <div class="conteudo">
-                <h1>Atividade 1</h1>
-                <p>
-                    O JavaScript é uma linguagem de programação criada pela Netscape em 4 de dezembro de 1995 e é
-                    utilizado para criar páginas Web interativas e dinâmicas. Há três formas de adicionar o JS em um
-                    site: Usando a tag Style dentro da tag head (Usado para itens que precisam ser carregados antes da
-                    página), Usando a tag Style dentro da tag Body (usado para itens que não precisam carregar antes da
-                    página) e/ou em um arquivo Style.js (usado para organizar todo suas linhas em um único documento,
-                    necessário devido ao tamanho que alguns projetos ocupam). O JS tem várias versões, como o ES5, ES6 e
-                    ES2015, sendo a ES2018 a mais atual. Mas nem sempre precisamos criar todo o nosso código, para isso
-                    usamos bibliotecas, elas são como blocos de lego que podemos implementar no nosso site podendo
-                    também mudar “a composição” de cada bloquinho. Para adicionar uma biblioteca, é usado o parâmetro
-                    src com o link da biblioteca. Aqui vai alguns exemplos de bibliotecas:
-                </p>
-                <p>
-                    KendoUI: como o nome sugere, a biblioteca ajuda na criação de interfaces
-                </p>
-                <p>
-                    Quill: adiciona campos de textos completos, tendo até mesmo como enviar fotos vídeos e etc…
-                </p>
-                <p>
-                    FullCalendar: outra biblioteca com nome autoexplicativo, com ele é possível adicionar calendários
-                    com
-                    várias funções interessantes.
-                </p>
-                <p>
-                    ToastUI: esta por sua vez permite adicionar uma ferramenta de edição de imagem no seu site
-                </p>
-                <p>
-                    Sweetalert: substitui o alert convencional do browser por uma versão estilizada
-                </p>
-            </div>
-        </div>
-        <div id="divatt2">
-            <div class="espaço"></div>
-            <div class="conteudo">
-                <h1>Atividade 2</h1>
-                <!-- Parte 1 -->
-                <div class="coluna">
-                    <div class="linha">
-                        <button onclick="maior()">Aumentar</button>
-                        <button onclick="menor()">Diminuir</button>
-                    </div>
-                    <h2>
-                        <p id="texto1"> Sample </p>
-                    </h2>
-                </div>
-                <!-- parte 2 -->
-                <div class="coluna">
-                    <div class="linha">
-                        <button onclick="Blue()">Blue</button>
-                        <button onclick="Red()">Red</button>
-                        <button onclick="Green()">Green</button>
-                    </div>
-                    <div class="coluna">
-                        <input style="width: 100px;" type="color" id="cor" onchange="cor()">
-                        <h2 id="texto2">Sample</h2>
-                    </div>
-                    <!-- parte 3 -->
-                    <div class="linha">
-                        <button onclick="menos()">-</button>
-                        <h2><span id="num">0</span></h2>
-                        <button onclick="mais()">+</button>
-                    </div>
-                    <!-- Parte 4 -->
-                    <div class="coluna">
-                        <input placeholder="A" type="number" id="a">
-                        <input placeholder="B" type="number" id="b">
-                        <input placeholder="C" type="number" id="c">
-                    </div>
-                    <button onclick="calc()">Calcular</button>
-                    <p id="result"></p>
-                    <div id="result"></div>
-                </div>
-            </div>
-        </div>
-        <div id="divatt3">
-            <div class="espaço"></div>
-            <div class="conteudo">
-                <h1>Atividade 3 (Aula)</h1>
-                <h3>Quanto deseja comprar de cada produto?</h3>
-                <div class="coluna">
-                    <div>
-                        <label for="maçã">Maçãs:</label>
-                        <input id="maça" name="maçã" type="number" onchange="calculapreço()">
-                    </div>
-                    <div>
-                        <label for="banana">Banana:</label>
-                        <input id="banana" name="banana" type="number" onchange="calculapreço()">
-                    </div>
-                    <div>
-                        <label for="abacaxi">Abacaxi:</label>
-                        <input id="abacaxi" name="abacaxi" type="number" onchange="calculapreço()">
-                    </div>
-                </div>
-                <h3>Irá custar : <span id="cp"></span></h3>
-            </div>
-        </div>
-    </div>
-    <div id="home">
-        <img src="./Assets/img/home.svg" alt="">
-    </div>
+    <script src="./Assets/Script/main.js"></script>
+    <script src="./Assets/Script/user__options.js"></script>
 </body>
-<script src="./Assets/scripts/main.js"></script>
-<script src="./Assets/scripts/att2.js"></script>
-<script src="./Assets/scripts/att3.js"></script>
-
 </html>
